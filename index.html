@@ -9,60 +9,69 @@
   </head>
   <body>
     <div class="container-fluid">
-      <h1>Getta Pizza!</h1>
-      <h2 class="pizzaChoices">Welcome, "try-a oura pizza builder"</h2>
-      <div class="pizzaBuilder">
-      <form id="pizzaChoices">
-        <div class="form-group">
-          <h4>Choose Sauce:</h4>
-          <input type="radio" name="sauce" value="Red Sauce" class="input"> Red Sauce<br>
-          <input type="radio" name="sauce" value="White Sauce"> White Sauce<br>
-          <input type="radio" name="sauce" value="Barbeque Sauce"> Barbeque Sauce<br>
+      <div class="content">
+        <h1>Getta Pizza!</h1>
+        <h2 class="pizzaChoices">Welcome, "try-a oura pizza builder"</h2>
+        <div class="pizzaBuilder">
+          <form id="pizzaChoices">
+            <div class="form-group">
+              <h4>Choose Sauce:</h4>
+              <input type="radio" name="sauce" value="Red Sauce"> Red Sauce<br>
+              <input type="radio" name="sauce" value="White Sauce"> White Sauce<br>
+              <input type="radio" name="sauce" value="Barbeque Sauce"> Barbeque Sauce<br>
+            </div>
+            <div class="form-group">
+              <h4>Meat Toppings ($2.50 each):</h4>
+              <input type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
+              <input type="checkbox" name="meat" value="Sausage"> Sausage<br>
+              <input type="checkbox" name="meat" value="Meatballs"> Meatballs<br>
+              <input type="checkbox" name="meat" value="Ground Beef"> Ground Beef<br>
+              <input type="checkbox" name="meat" value="Grilled Chicken"> Grilled Chicken<br>
+            </div>
+            <div class="form-group">
+              <h4>Veggie Toppings ($1.50 each):</h4>
+              <input type="checkbox" name="veggie" value="Onions"> Onions<br>
+              <input type="checkbox" name="veggie" value="Sun-Dried Tomatoes"> Sun-Dried Tomatoes<br>
+              <input type="checkbox" name="veggie" value="Jalapenos"> Jalapenos<br>
+              <input type="checkbox" name="veggie" value="Black Olives"> Black Olives<br>
+              <input type="checkbox" name="veggie" value="Artichoke Hearts"> Artichoke Hearts<br>
+              <input type="checkbox" name="veggie" value="Arugula"> Arugula<br>
+            </div>
+            <div class="form-group">
+              <h4>Choose Size:</h4>
+              <input type="radio" name="sizes" value="Small"> Small (12 inch)<br>
+              <input type="radio" name="sizes" value="Medium"> Medium (14 inch)<br>
+              <input type="radio" name="sizes" value="Large"> Large (17 inch)<br>
+            </div>
+           <button type="submit" class="btn btn-danger">Getta Pizza!</button>
+          </form>
+          <div class="reveal">
+            <div id="sauce">
+              <h1>Thanks for your order!</h1>
+              <h2>Here's a summary of your pizza.</h2>
+              <h3>Your Sauce:</h3>
+              <h4 id="sauceResult"></h4>
+            </div>
+            <div id="meats">
+              <h3>Your Meats:</h3>
+            </div>
+            <div id="veggies">
+              <h3>Your Veggies:</h3>
+            </div>
+            <div id="size">
+              <h3>Your Size:</h3>
+            </div>
+            <div id="orderTotal">
+              <h2>Order Total:</h2>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <h4>Meat Toppings ($2.50 each):</h4>
-          <input type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
-          <input type="checkbox" name="meat" value="Sausage"> Sausage<br>
-          <input type="checkbox" name="meat" value="Meatballs"> Meatballs<br>
-          <input type="checkbox" name="meat" value="Ground Beef"> Ground Beef<br>
-          <input type="checkbox" name="meat" value="Grilled Chicken"> Grilled Chicken<br>
-        </div>
-        <div class="form-group">
-          <h4>Veggie Toppings ($1.50 each):</h4>
-          <input type="checkbox" name="veggie" value="Onions"> Onions<br>
-          <input type="checkbox" name="veggie" value="Sun-Dried Tomatoes"> Sun-Dried Tomatoes<br>
-          <input type="checkbox" name="veggie" value="Jalapenos"> Jalapenos<br>
-          <input type="checkbox" name="veggie" value="Black Olives"> Black Olives<br>
-          <input type="checkbox" name="veggie" value="Artichoke Hearts"> Artichoke Hearts<br>
-          <input type="checkbox" name="veggie" value="Arugula"> Arugula<br>
-        </div>
-        <div class="form-group">
-          <h4>Choose Size:</h4>
-          <input type="radio" name="sizes" value="Small"> Small (12 inch)<br>
-          <input type="radio" name="sizes" value="Medium"> Medium (14 inch)<br>
-          <input type="radio" name="sizes" value="Large"> Large (17 inch)<br>
-        </div>
-       <button type="submit" class="btn btn-danger">Getta Pizza!</button>
-      </form>
-      <div id="sauce">
-        <h1>Thanks for your order!</h1>
-        <h2>Here's a summary of your pizza.</h2>
-        <h3>Your Sauce:</h3>
-        <h4 id="sauceResult"></h4>
       </div>
-      <div id="meats">
-        <h3>Your Meats:</h3>
-      </div>
-      <div id="veggies">
-        <h3>Your Veggies:</h3>
-      </div>
-      <div id="size">
-        <h3>Your Size:</h3>
-      </div>
-      <div id="orderTotal">
-        <h3>Order Total:</h3>
-      </div>
-    </div>
     </div><!--end container-->
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+        <p>Copyright© 2017, Getta Pizza LLC</p>
+      </div>
+    </nav>
   </body>
 </html>

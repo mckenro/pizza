@@ -1,5 +1,56 @@
 body {
   text-align: center;
+  background: url(../img/pizza.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+h2, h4 {
+  font-weight: 200;
+}
+
+h1, h2, h3, h4 {
+  color: #D41D03;
+}
+
+h2 {
+  padding-bottom: 14px;
+  border-bottom: 1px solid #D41D03;
+}
+
+.reveal {
+  width: 100%;
+}
+
+.reveal h3 {
+  color: #D41D03;
+}
+
+.reveal h4 {
+  font-size: 20px;
+  color: #333333;
+}
+
+#orderTotal h3 {
+  font-size: 46px;
+}
+
+.navbar {
+  height: 20px;
+  background-color: #D41D03;
+}
+
+.navbar p {
+  color: #DEDEDE;
+  padding-top: 10px;
+}
+
+button {
+  background-color: #D41D03;
 }
 
 form {
@@ -8,13 +59,40 @@ form {
 }
 
 form h4 {
+  font-size: 20px;
   text-align: center;
   margin-left: -100px;
 }
 
 button {
   text-align: center;
-  margin-left: 50px;
+  margin-top: 16px;
+  margin-left: 24px;
+}
+
+.btn-danger:hover {
+  color: #D41D03;
+  background-color: #ABCA24;
+}
+
+.btn-danger {
+  font-size: 16px;
+  padding: 12px 24px;
+  background-color: #D41D03;
+}
+
+.form-group {
+  font-size: 18px;
+}
+
+.content{
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 100vh;
+  background:rgba(255,255,255,0.7);
+  padding-top: 10px;
+  padding-bottom: 1000px;
 }
 
 .pizzaBuilder {
