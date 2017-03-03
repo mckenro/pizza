@@ -17,7 +17,7 @@ function Pizza(sauce, meatToppings, veggieToppings, size){
 }
 // use prototype to calculate total cost of pizza
 Pizza.prototype.pizzaCost = function () {
-  return ((meatToppings[i].length * 2.5) + (veggieToppings[i].length * 1.5) + sizeTotal);
+  return ((this.meatToppings.length * 2.5) + (this.veggieToppings.length * 1.5) + this.sizeTotal);
 }
 
 //frontend
@@ -46,7 +46,7 @@ $(document).ready(function() {
     $("#size").append("<h4>" + sizeSelection + "</h4>")
 
     var userPizza = new Pizza(sauceSelection, meatSelection, veggieSelection, sizeSelection);
- console.log(userPizza);
- console.log(userPizza.pizzaCost());
+    var userPizzaPrice = (userPizza.pizzaCost());
+ console.log(userPizzaPrice);
   });
 });
