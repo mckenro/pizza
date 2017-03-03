@@ -1,24 +1,31 @@
 //backend
 
-function Pizza(sauce, meatToppings, veggieToppings, size){
+function Pizza(sauce, meatToppings, veggieToppings, sizes){
   this.sauce = sauce;
   this.meatToppings = meatToppings;
   this.veggieToppings = veggieToppings;
-  this.size = size;
+  this.sizes = sizes;
   this.sizeTotal = function (){
-    if (sizeSelection === "Small (12 inch)") {
+    if (this.sizes === "Small") {
       return 12;
-    } else if (sizeSelection === "Medium (14 inch)") {
+      console.log(this.sizeTotal);
+    } else if (this.sizes === "Medium") {
       return 14;
-    } else if (sizeSelection === "Large (17 inch)") {
+    } else if (this.sizes === "Large") {
       return 17;
     }
   }
 }
 // use prototype to calculate total cost of pizza
 Pizza.prototype.pizzaCost = function () {
-  return ((this.meatToppings.length * 2.5) + (this.veggieToppings.length * 1.5) + this.sizeTotal);
-}
+  if (this.sizes === "Small"){
+    return ((this.meatToppings.length * 2.5) + (this.veggieToppings.length * 1.5) + 12);
+  } else if (this.sizes === "Medium"){
+    return ((this.meatToppings.length * 2.5) + (this.veggieToppings.length * 1.5) + 14);
+  } else if (this.sizes === "Large") {
+  return ((this.meatToppings.length * 2.5) + (this.veggieToppings.length * 1.5) + 12);
+  }
+  }
 
 //frontend
 $(document).ready(function() {
@@ -32,21 +39,24 @@ $(document).ready(function() {
     $("#meats").show();
     var meatSelection = $("input:checkbox[name=meat]:checked").each(function() {
       var meatInput = $(this).val();
-      $("#meats").append("<h4>" + meatSelection + "</h4>")
+      $("#meats").append("<h4>" + meatInput + "</h4>")
     })
 
     $("#veggies").show();
     var veggieSelection = $("input:checkbox[name=veggie]:checked").each(function() {
       var veggieInput = $(this).val();
-      $("#veggies").append("<h4>" + veggieSelection + "</h4>")
+      $("#veggies").append("<h4>" + veggieInput + "</h4>")
     })
 
     $("#size").show();
-    var sizeSelection = $("input:radio[name=size]:checked").val();
+    var sizeSelection = $("input:radio[name=sizes]:checked").val();
     $("#size").append("<h4>" + sizeSelection + "</h4>")
 
+    $(".pizzaChoices").hide();
+    $("#pizzaChoices").hide();
+    $("#orderTotal").show();
     var userPizza = new Pizza(sauceSelection, meatSelection, veggieSelection, sizeSelection);
     var userPizzaPrice = (userPizza.pizzaCost());
- console.log(userPizzaPrice);
+    $("#orderTotal").append("<h3>$" + userPizzaPrice + "</h3>");
   });
 });
