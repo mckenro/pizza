@@ -1,3 +1,28 @@
+body {
+  text-align: center;
+}
+
+form {
+  text-align: left;
+  margin-left: 100px;
+}
+
+form h4 {
+  text-align: center;
+  margin-left: -100px;
+}
+
+button {
+  text-align: center;
+  margin-left: 50px;
+}
+
+.pizzaBuilder {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
 #sauce {
   display: none;
 }

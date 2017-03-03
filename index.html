@@ -10,11 +10,12 @@
   <body>
     <div class="container-fluid">
       <h1>Getta Pizza!</h1>
-      <h2 class="pizzaChoices">Welcome, choose your options below</h2>
+      <h2 class="pizzaChoices">Welcome, "try-a oura pizza builder"</h2>
+      <div class="pizzaBuilder">
       <form id="pizzaChoices">
         <div class="form-group">
           <h4>Choose Sauce:</h4>
-          <input type="radio" name="sauce" value="Red Sauce"> Red Sauce<br>
+          <input type="radio" name="sauce" value="Red Sauce" class="input"> Red Sauce<br>
           <input type="radio" name="sauce" value="White Sauce"> White Sauce<br>
           <input type="radio" name="sauce" value="Barbeque Sauce"> Barbeque Sauce<br>
         </div>
@@ -41,7 +42,7 @@
           <input type="radio" name="sizes" value="Medium"> Medium (14 inch)<br>
           <input type="radio" name="sizes" value="Large"> Large (17 inch)<br>
         </div>
-       <button type="submit" class="btn btn-primary">Getta Pizza!</button>
+       <button type="submit" class="btn btn-danger">Getta Pizza!</button>
       </form>
       <div id="sauce">
         <h1>Thanks for your order!</h1>
@@ -61,6 +62,7 @@
       <div id="orderTotal">
         <h3>Order Total:</h3>
       </div>
+    </div>
     </div><!--end container-->
   </body>
 </html>
