@@ -1,5 +1,4 @@
 //backend
-
 function Pizza(sauce, meatToppings, veggieToppings, sizes){
   this.sauce = sauce;
   this.meatToppings = meatToppings;
@@ -16,6 +15,7 @@ function Pizza(sauce, meatToppings, veggieToppings, sizes){
     }
   }
 }
+
 // use prototype to calculate total cost of pizza
 Pizza.prototype.pizzaCost = function () {
   if (this.sizes === "Small"){
