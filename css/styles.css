@@ -35,6 +35,10 @@ h2 {
   color: #333333;
 }
 
+#orderTotal {
+  padding-bottom: 200px;
+}
+
 #orderTotal h3 {
   font-size: 46px;
 }
