@@ -9,11 +9,11 @@
 _This project allows a user to create a pizza by selecting a sauce, a choice of meat toppings, and a choice of veggie toppings. Once the user submits their selection, the page will display a confirmation of their order and a total price for the pizza. Meat topping and veggie toppings will have different costs per topping. Project is available for review here: https://github.com/mckenro/pizza and here: https://mckenro.github.io/pizza/_
 
 ## Specs
- 
-*_The program will take radio and checkbox inputs from the user_
-*_The program will calculate the total cost of the pizza based on the users selections_
-*_The program will display the users selections back to them_
-*_The program will display the total cost to the user_"
+
+* _The program will take radio and checkbox inputs from the user_
+* _The program will calculate the total cost of the pizza based on the users selections_
+* _The program will display the users selections back to them_
+* _The program will display the total cost to the user_"
 
 ## Setup/Installation Requirements
 
