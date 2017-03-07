@@ -5,15 +5,6 @@ function Pizza(sauce, meatToppings, veggieToppings, sizes){
   this.veggieToppings = veggieToppings;
   this.sizes = sizes;
   this.sizeTotal = function (){
-    if (this.sizes === "Small") {
-      return 12;
-      console.log(this.sizeTotal);
-    } else if (this.sizes === "Medium") {
-      return 14;
-    } else if (this.sizes === "Large") {
-      return 17;
-    }
-  }
 }
 
 // use prototype to calculate total cost of pizza
@@ -23,7 +14,7 @@ Pizza.prototype.pizzaCost = function () {
   } else if (this.sizes === "Medium"){
     return ((this.meatToppings.length * 2.5) + (this.veggieToppings.length * 1.5) + 14);
   } else if (this.sizes === "Large") {
-  return ((this.meatToppings.length * 2.5) + (this.veggieToppings.length * 1.5) + 12);
+  return ((this.meatToppings.length * 2.5) + (this.veggieToppings.length * 1.5) + 17);
   }
   }
 
